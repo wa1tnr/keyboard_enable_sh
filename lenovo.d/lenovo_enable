@@ -1,0 +1,5 @@
+#!/bin/sh
+export XINID=`xinput | egrep Think | sed 1q | cut -b 67-68`
+xinput set-prop ${XINID} "Device Enabled" 1 # or 0 to disable
+exit 0
+# end

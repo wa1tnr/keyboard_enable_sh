@@ -1,0 +1,5 @@
+#!/bin/sh
+export XINID=`xinput | egrep Think | sed 1q | cut -b 67-68`
+xinput list-props ${XINID} | egrep "Device" | egrep "Enabled"
+exit 0
+# end
