@@ -1,7 +1,7 @@
 ```
  $  echo; date ; echo ; xinput list ; echo
 
-Wed 14 Sep 13:19:03 UTC 2022
+Wed 14 Sep 13:59:07 UTC 2022
 
 ⎡ Virtual core pointer                          id=2    [master pointer  (3)]
 ⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
@@ -36,4 +36,30 @@ used (locally, as a one-off solution) for this technique.
 Unexplored: why the keyboard section gets two entries in
 the xinput list table.
 
+
+# SESSION log:
+
+```
+ $ ls
+islenovo  lenovo_disable  lenovo_enable
+
+ $ lenovo_enable ; islenovo
+        Device Enabled (173):   1
+
+ $ lenovo_disable ; islenovo
+        Device Enabled (173):   0
+
+ $ islenovo
+        Device Enabled (173):   0
+
+ $ lenovo_enable
+
+ $ islenovo
+        Device Enabled (173):   1
+
+ $ lenovo_disable
+
+ $ islenovo
+        Device Enabled (173):   0
+```
 END.
