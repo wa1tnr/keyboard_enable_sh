@@ -29,7 +29,7 @@ state of the system - cannot be hard-coded and did not want
 to require learning what they are set to, currently, for
 these scripts to succeed.
 
-xinput, post-processed with grep and cut, seemed to be reliable
+xinput, post-processed with egrep, sed and cut, seemed to be reliable
 enough to work with, so that's the current development level
 used (locally, as a one-off solution) for this technique.
 
