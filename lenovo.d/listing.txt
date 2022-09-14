@@ -1,0 +1,5 @@
+islenovo        # answers the question 'is lenovo enabled or disabled'
+lenovo_disable  # disable lenovo TrackPad section
+lenovo_enable   # enable the TrackPad
+
+ $ lenovo_enable ; islenovo
